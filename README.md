@@ -54,6 +54,15 @@ In the host, update ``` /etc/hosts ``` to include your app domain:
 127.0.0.1               myapp.dev
 ```
 
+### Todo 
+- Integrating Xdebug for debugging
+- Integrate mailcatcher to get all email output
+- Move the apps folder to /var/www/apps
+- Move the apps/volumes folder to /etc
+
+## Wishes?
+- Send me an email to cvsteenbergen@gmail.com or fork this package
+
 ### That's it
 Our web container starts nginx, php-fpm, redis, beanstalk. and has gruntjs, gulp, bower...etc
 some relevant ports have been added to docker-compose.yml ( livereload standard port, karma server port ),
