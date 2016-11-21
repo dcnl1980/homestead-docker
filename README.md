@@ -54,7 +54,12 @@ In the host, update ``` /etc/hosts ``` to include your app domain:
 127.0.0.1               myapp.dev
 ```
 
-### Todo 
+### That's it
+Our web container starts nginx, php-fpm, redis, beanstalk. and has gruntjs, gulp, bower...etc
+some relevant ports have been added to docker-compose.yml ( livereload standard port, karma server port ),
+change them if you need to.
+
+## Todo 
 - Integrating Xdebug for debugging
 - Integrate mailcatcher to get all email output
 - Move the apps folder to /var/www/apps
@@ -63,11 +68,6 @@ In the host, update ``` /etc/hosts ``` to include your app domain:
 ## Wishes?
 - Send me an email to cvsteenbergen@gmail.com or fork this package
 
-### That's it
-Our web container starts nginx, php-fpm, redis, beanstalk. and has gruntjs, gulp, bower...etc
-some relevant ports have been added to docker-compose.yml ( livereload standard port, karma server port ),
-change them if you need to.
-
-### Notes
+## Notes
 - Use docker's local IP address to connect to your database. Run `docker inspect --format '{{ .NetworkSettings.IPAddress }}' ${CID}`, where `${CID}` is docker container ID of the database
 - Databases: by default mariadb is used as a database, but you are free to use any database you want: choose from these excellent images by Tutum: [tutum/mysql](https://github.com/tutumcloud/mysql) or [tutum/postgresql](https://github.com/tutumcloud/postgresql), they expose different environment variables, so don't forget to update your docker-compose file accordingly.
