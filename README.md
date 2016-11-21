@@ -9,6 +9,10 @@ please refer to these tutorials:
 ```shell
 curl -sSL https://get.docker.com/ | sh
 ```
+* alternative, or make it yourself easy to download the DMG from docker.com
+
+https://download.docker.com/mac/stable/Docker.dmg
+
 * install docker compose (https://docs.docker.com/compose/install/)
 ```shell
 curl -L https://github.com/docker/compose/releases/download/1.6.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
