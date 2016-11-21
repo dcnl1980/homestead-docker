@@ -1,4 +1,6 @@
-# Laravel homestead-docker
+# Laravel homestead-docker for MAC
+# Alternative for MAMP or other LAMP stack
+
 Create a homestead docker container for your development env. ( files taken from laravel settler: provision.sh (modified) + serve.sh )
 
 ### Install docker && docker compose
