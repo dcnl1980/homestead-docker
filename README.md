@@ -3,19 +3,20 @@
 
 Create a homestead docker container for your development env. ( files taken from laravel settler: provision.sh (modified) + serve.sh )
 
-### Install docker && docker compose
+### CLI: Install docker && docker compose (or use GUI (below) as alternative)
 please refer to these tutorials:
 * install docker (https://docs.docker.com/installation/ubuntulinux/)
 ```shell
 curl -sSL https://get.docker.com/ | sh
 ```
-* alternative, or make it yourself easy to download the DMG from docker.com
-
-https://download.docker.com/mac/stable/Docker.dmg
-
 * install docker compose (https://docs.docker.com/compose/install/)
 ```shell
 curl -L https://github.com/docker/compose/releases/download/1.6.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+```
+
+### GUI: Make it yourself easy to download the DMG from docker.com (alternative)
+```shell
+https://download.docker.com/mac/stable/Docker.dmg
 ```
 
 ### Pull homestead image
